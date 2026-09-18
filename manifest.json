@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "AWeSome Gebra",
+  "version": "1.0.0",
+  "description": "A calibrated ruler, protractor, maths grids, notes and function plotting over any web page. Built for stylus and touch. Made by Hamzh studios.",
+  "author": "Hamzh Studios",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle AWeSome Gebra (Alt+Shift+R)"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-overlay": {
+      "suggested_key": {
+        "default": "Alt+Shift+R"
+      },
+      "description": "Show or hide the drafting overlay"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
