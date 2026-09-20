@@ -15,7 +15,7 @@ Screenshots help a lot for anything visual, such as grid alignment, label crowdi
 
 ## Security issues
 
-Do not open a public issue for a security problem. Use the private vulnerability reporting link on the Security tab of this repository, or email contact@hamzhstudios.com. You will get a reply.
+Do not open a public issue for a security problem. email contact@hamzhstudios.com. And You will get a reply.
 
 ## Code contributions
 
